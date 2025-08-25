@@ -1,1 +1,69 @@
-
+#  VaultEdge
+VaultEdge is a security company providing high-quality security products, tailor-made packages, exclusive deals, and professional installation services for homes, offices, and commercial properties.
+## :gear: Technolgies Used
+  1. Vue.js
+  2. Node.js
+  3. Tailwind
+  4. Javascript
+  5. CSS
+  6. MYSQL
+## :sparkles: FEATURES
+  1. Product catalogue
+  2. Tailor-made security packages
+  3. Installation service booking
+  4. Deals and discounts section
+  5. Order and service tracking
+  6. Secure user authentication and login
+  7. Responsive Design
+  8. Forgot / Reset Password
+## :gear: HOW TO USE
+### :white_check_mark: Prerequisites
+- Install **Node.js** (latest LTS recommended)
+- Install **MySQL** and ensure it is running
+---
+### :small_blue_diamond: Step 1: Database Setup
+1. Open MySQL and locate the database located in the folder called vaultedge_backend and please run that schema using MYSQL.
+### :small_blue_diamond: Step 2: Install Dependencies
+1. Open the project in **Visual Studio Code** (or your preferred IDE).
+2. Open **two terminals**:
+- **Frontend**:
+  ```bash
+  cd vaultedge_frontend
+  npm install
+  ```
+- **Backend**:
+  ```bash
+  cd vaultedge_backend
+  npm install
+  ```
+---
+### :small_blue_diamond: Step 3: Configure Environment
+Inside the `vaultedge_backend` folder, create a `.env` file and update it with your own configuration:
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=vault_edge
+JWT_SECRET=your_secret_key
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=youremail@gmail.com
+EMAIL_PASS=your_app_password
+```
+:warning: Note: To generate an EMAIL_PASS for Gmail, enable 2-Step Verification on your Google account and create an App Password.
+### :small_blue_diamond: Step 4: Run the application
+In your terminals please follow the below instructions to run your application successfully
+- **Backend**:
+```bash
+cd vaultedge_backend
+nodemon index.js
+The following link will open indicating that your backend server is successfully running :
+http://localhost:3000
+```
+- **Frontend**:
+```bash
+cd vaultedge_frontend
+npm run serve
+Open: http://localhost:8080
+```
+:warning: Note: In order to access the VaultEdge ecommerce website, you first need to register yourself an account and then login using your email address and password you created whilst registering.
